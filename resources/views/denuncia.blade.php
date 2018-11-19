@@ -19,7 +19,7 @@
                 <img src="{{ asset('images/slide.png') }}" class="w-100 d-block img-fluid">
                 <div class="carousel-caption d-none d-md-block">
                       <h1>Denuncie Já</h1>
-                      <p class="lead">Ajuda-nós a acabar com as irregularidades</p>
+                      <p class="lead">Ajude-nós a acabar com as irregularidades</p>
                 </div>
               </div>
               
@@ -43,7 +43,7 @@
 			    <h5 class="card-title">Poluição Visual</h5>
 			    <p class="card-text">Quais são as principais causas da poluição visual e o que devemos fazer a respeito.</p>
 			  </div>
-			  <div class="card-footer border-primary"><button type="button" class="btn btn-primary">Iniciar Missão</button></div>
+			  <div class="card-footer border-primary text-center"><button type="button" class="btn btn-outline-dark"><i class="fas fa-angle-double-right"></i> Iniciar</button></div>
 			</div>
 		</div>
 		<div class="col-sm-4">
@@ -58,7 +58,7 @@
 			    <h5 class="card-title">Crime Ambiental</h5>
 			    <p class="card-text">O que é crime ambiental e qual a ligação disso nas instalações irregulares.</p>
 			  </div>
-			  <div class="card-footer border-primary"><button type="button" class="btn btn-primary">Iniciar Missão</button></div>
+			  <div class="card-footer border-primary text-center"><button type="button" class="btn btn-outline-dark"><i class="fas fa-angle-double-right"></i> Iniciar</button></div>
 			</div>
 		</div>
 		<div class="col-sm-4">
@@ -73,7 +73,7 @@
 			    <h5 class="card-title">Risco de acidentes</h5>
 			    <p class="card-text">Quais os principais acidentes que podem ocorrer por causa de irregularidades nas instalações.</p>
 			  </div>
-			  <div class="card-footer border-primary"><button type="button" class="btn btn-primary">Iniciar Missão</button></div>
+			  <div class="card-footer border-primary text-center"><button type="button" class="btn btn-outline-dark"><i class="fas fa-angle-double-right"></i> Iniciar</button></div>
 			</div>
 		</div>
 	</div>

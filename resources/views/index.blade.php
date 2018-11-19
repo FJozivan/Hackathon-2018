@@ -47,14 +47,35 @@
                       
                     </ul>
                     <ul class="navbar-nav ml-auto">
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">User01</a>
-                          <div class="dropdown-menu"> 
-                              <a class="dropdown-item" href="#">Perfil</a>
-                              <a class="dropdown-item" href="#">Sair</a>
-                              
-                          </div>
-                      </li>
+                        <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                @if (Route::has('register'))
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                @endif
+                            </li>
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
                     </ul>
                  
 
@@ -71,18 +92,9 @@
          @yield('content') 
           
         
-        <footer class="foot page-footer font-small pt-4">
-
-        <br><br>
-        <!-- Footer Links -->
-
-        <!-- Copyright -->
-        <div class="footer_copyright footer-copyright text-center py-3 texto">© 2018 Copyright:
-          <a href="https://www.eneldistribuicao.com.br/" style="color: #ffffff">Enel</a>
-        </div>
-        <!-- Copyright -->
-
-      </footer>
+        <footer class="footer text-light">
+          ObjectSys 1.0-2018
+        </footer>
       <!-- Footer -->
         
       
