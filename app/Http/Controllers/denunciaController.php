@@ -6,11 +6,26 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\denuncias;
 
-class denunciaController extends Controller
+class DenunciaController extends Controller
 {
-    public function create(Request $request){
-        denuncias::create($request->all());
-        $id = denuncias::max('id');
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+    return view('denuncia');
+    }
+
+    public function cadDenuncia(){
+        return view('cadDenuncia');
+    }
+
+    public function create(Request $request)
+    {
+       denuncias::create($request->all());
+       $id = denuncias::max('id');
         $denuncia = denuncias::find($id);
 
         
@@ -23,17 +38,65 @@ class denunciaController extends Controller
             $request->nm_imagem->storeAs('denuncias', $name_file);
             $denuncia->nm_imagem = $name_file;
             $denuncia->save();
-            $request->session()->forget('denuncia');
-            $request->session()->push('denuncia', [
-                'img' => $name_file
-            ]);
-            session()->flash('success','O denuncia '.$resposta->nome.' foi atualizado com sucesso!');
-            return redirect('/form/denuncias');
-        }   
+           // $request->session()->forget('denuncia');
+           // $request->session()->push('denuncia', [
+            //    'img' => $name_file
+            //]);
+            session()->flash('success','O denuncia '.$request->nome.' foi atualizado com sucesso!');
+            
+        }
+            
+       return redirect('/')->with('status','Denuncia Cadastrada com Sucesso');
     }
 
-    public function showform(){
-        return view ('denuncias');
+    
+    public function store(Request $request)
+    {
+        //
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
 }
