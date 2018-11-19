@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Denuncia extends Migration
+class Denuncias extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class Denuncia extends Migration
      */
     public function up()
     {
-        Schema::create('denuncia', function (Blueprint $table) {
-            $table->increments('id')->nullable();
+        Schema::create('denuncias', function (Blueprint $table) {
+            $table->increments('id')->unsigned();
             $table->string('observacao');
             $table->string('descricao');
             $table->string('rua');
@@ -22,7 +22,7 @@ class Denuncia extends Migration
             $table->string('bairro');
             $table->string('cidade');
             $table->string('nm_imagem');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->timestamps();
         });
     }
 
