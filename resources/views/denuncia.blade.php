@@ -17,7 +17,7 @@
           <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="{{ asset('images/slide.png') }}" class="w-100 d-block img-fluid">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-md-block">
                       <h1>Denuncie Já</h1>
                       <p class="lead">Ajude-nós a acabar com as irregularidades</p>
                 </div>

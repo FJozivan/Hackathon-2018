@@ -21,7 +21,7 @@
   <body style="font-family: 'Open Sans', sans-serif;">    
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1d9aff;">
           <div class="container">
-
+              <a class="navbar-brand h1 mb-0" href="#">NIIRE</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -92,10 +92,95 @@
          @yield('content') 
           
         
-        <footer class="footer text-light">
-          ObjectSys 1.0-2018
-        </footer>
-      <!-- Footer -->
+        <footer class="foot page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+              <!-- Content -->
+              <h5 class="text-uppercase" style="color: #DCDCDC">Descrição:</h5>
+              <p>Um sistema de reserva de materiais em conjunto com o rastreamento em tempo real dos objetos que podem ser deslocados, auxiliando os usuários (professores) na reserva e gerenciamento de recursos, evitando ainda a perda dos mesmos. </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase" style="color: #DCDCDC">Equipe</h5>
+
+                <ul class="list-unstyled texto">
+                  <li>
+                    <p >Lucas Eduardo</p>
+                  </li>
+                  <li>
+                    <p >Jozivan Freire</p>
+                  </li>
+                  <li>
+                    <p >Raphael Oliveira</p>
+                  </li>
+                  <li>
+                    <p >Alberto Junior</p>
+                  </li>
+                  <li>
+                    <p >Deeved Hiuston</p>
+                  </li>
+
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase" style="color: #DCDCDC">Contatos</h5>
+
+                <ul class="list-unstyled texto">
+                  <li>
+                    <p>lucas@gmail.com</p>
+                  </li>
+                  <li>
+                    <p>josivan@gmail.com</p>
+                  </li>
+                  <li>
+                    <p>raphael@gmail.com</p>
+                  </li>
+                  <li>
+                    <p>alberto@gmail.com</p>
+                  </li>
+                  <li>
+                    <p>deeved.n@gmail.com</p>
+                  </li>
+
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer_copyright footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="https://sites.google.com/site/laisifce/home">LaIS</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
         
       
 
