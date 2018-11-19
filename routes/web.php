@@ -18,5 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/denuncias/criar', 'denunciaController@create')->name('denuncia.create');
+Route::post('/denuncias/criar', 'denunciaController@create')->name('denuncia.create');
 Route::get('/form/denuncias','denunciaController@showform');
+Route::get('/denuncias/cadastrar','denunciaController@cadastrarDenuncia');
