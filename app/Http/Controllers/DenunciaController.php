@@ -28,7 +28,8 @@ class DenunciaController extends Controller
 
     public function listagem(){
         $denuncia = denuncias::all();
-        return view('listagemDenuncia',compact('denuncia'));
+        $cidades = denuncias::all();
+        return view('listagemDenuncia',compact('denuncia','cidades'));
     }
 
     public function pontos(){
@@ -118,5 +119,14 @@ class DenunciaController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function pesquisarCidade(Request $request){
+        $denuncia = denuncias::where('cidade',$request->only('cidade'))->get();
+        if($denuncia->count() < 1){
+            $denuncia = denuncias::all();
+        }
+        $cidades = denuncias::all();
+         return view('listagemDenuncia',compact('denuncia','cidades'));
     }
 }

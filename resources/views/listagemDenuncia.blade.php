@@ -2,50 +2,30 @@
 
 @section('content')
 
-<div class="container">
+      <div class="container">
           <div class="row mt-4">
             <div class="col-sm-12">
-              <span class="h1 mb-1 mt-1 float-left">Setores</span>
+              <span class="h1 mb-1 mt-1 float-left">Listagem de denuncias</span>
             </div>
           </div>
-          <div class="row justify-content-center mb-1 mt-1">
-            <div class="col-sm-12">
-              <form>
-                <div class="form-row">
-                  <div class="form-group col-sm-3">
-                    <select class="custom-select">
-					  <option selected>Selecione a região</option>
-					  <option value="1">One</option>
-					  <option value="2">Two</option>
-					  <option value="3">Three</option>
-					</select>   
-                  </div>
-                  <div class="form-group col-sm-3">
-                    <select class="custom-select">
-					  <option selected>Selecione a cidade</option>
-					  <option value="1">One</option>
-					  <option value="2">Two</option>
-					  <option value="3">Three</option>
-					</select>   
-                  </div>
-                  <div class="form-group col-sm-3">
-                    <select class="custom-select">
-					  <option selected>Selecione o estado</option>
-					  <option value="1">One</option>
-					  <option value="2">Two</option>
-					  <option value="3">Three</option>
-					</select>   
-                  </div>	
-
-
-
-                  <div class="form-group col-sm-2">
-                    <button class="btn btn-dark float-right" type="submit">Buscar</button>
-                  </div>
-                </div>
+          <div class="row mt-2">
+            <div class="form-group col-sm-10">
+              <form method="get" action="{{route('pesquisarCidade')}}">
+            
+              <select class="custom-select" name="cidade" id="cidade">
+                  <option selected>Selecione a cidade</option>
+                  @foreach($cidades as $cidade)
+                  <option value="{{$cidade->cidade}}">{{$cidade->cidade}}</option>
+                @endforeach
+              </select>   
+              
+              </div>
+              <div class="form-group col-sm-2">
+                <button class="btn btn-dark float-right" type="submit">Buscar</button>
+              </div>
               </form>
             </div>
-          </div>
+        
 
 
 
@@ -79,5 +59,5 @@
           </div>
           
         </div>
-
+</div>
 @endsection

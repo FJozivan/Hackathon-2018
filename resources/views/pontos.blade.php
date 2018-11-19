@@ -28,7 +28,7 @@
                            <h1 class="display-4"><i class="fas fa-user-secret"></i></h1>
                          </div>
                          <div class="col-sm-10">
-                              <p> humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the There are many variatio</p>
+                              <p> De acordo com as denuncias realizadas pelo usuário e com a comprovação da veracidade dessas denuncias os usuários poderam ganhar pontuações para o sistema de bonificação</p>
                            
                          </div>
                       </div>
@@ -40,7 +40,7 @@
                            
                          </div>
                          <div class="col-sm-10">
-                              <p> humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the There are many variatio</p>
+                              <p> O sistema de missões também fornece pontuações para o usuário. Quanto mais missões o usuário realizar, mais pontos ele ira conseguir e assim terá mais chances de uma bonificação</p>
                            
                          </div>
                       </div>

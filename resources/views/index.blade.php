@@ -21,7 +21,6 @@
   <body style="font-family: 'Open Sans', sans-serif;">    
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1d9aff;">
           <div class="container">
-            <a class="navbar-brand h1 mb-0" href="#">System</a>
 
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
                 <span class="navbar-toggler-icon"></span>
