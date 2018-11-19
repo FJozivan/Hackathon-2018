@@ -22,6 +22,20 @@ class DenunciaController extends Controller
         return view('cadDenuncia');
     }
 
+    public function aprendizagem(){
+        return view('aprendizagem');
+    }
+
+    public function listagem(){
+        return view('listagemDenuncia');
+    }
+
+    public function pontos(){
+        return view('pontos');
+    }
+
+
+
     public function create(Request $request)
     {
        denuncias::create($request->all());

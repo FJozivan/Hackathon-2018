@@ -14,7 +14,7 @@
     <title>System</title>
   </head>
   <body>    
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FFA500;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1d9aff;">
           <div class="container">
             <a class="navbar-brand h1 mb-0" href="#">System</a>
 
@@ -24,17 +24,21 @@
 
                 <div class="collapse navbar-collapse" id="navbarSite">
                     <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
+                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('denuncia') }}">Início</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="{{ route('cadDenuncia') }}">Denunciar</a>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Área de Denuncias</a>
+                        <div class="dropdown-menu"> 
+                              <a class="dropdown-item" href="{{ route('cadDenuncia') }}">Denunciar</a>
+                              <a class="dropdown-item" href="{{ route('listagemDenuncia') }}">Lista de Denuncias</a>
+                          </div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Aprendizagem</a>
+                        <a class="nav-link" href="{{ route('aprendizagem') }}">Aprendizagem</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Sistema de Pontos</a>
+                        <a class="nav-link" href="{{ route('pontos') }}">Sistema de Pontos</a>
                       </li>
                       
                     </ul>
@@ -72,10 +76,10 @@
           <div class="row">
 
             <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3 text-justify">
+            <div class="col-md-6 mt-md-0 mt-3 text-justify texto">
 
               <!-- Content -->
-              <h5 class="text-uppercase" style="color: #e65437">Descrição:</h5>
+              <h5 class="text-uppercase" style="color: #ffffff"><b>Descrição:</b></h5>
               <p>Aplicativo que facilita a integração entre enel e cliente, a fim de haver uma cooperação simultânea, o app consiste em um canal onde o usuário pode se informar a respeito das normas que a enel dispõe e também poderá fazer denúncias que serão direcionadas a enel, depois de aprender com tutoriais interativos como identificar algumas das irregularidades, apresentando as normas disponibilizadas pela Enel de forma intuitiva.. </p>
 
             </div>
@@ -87,7 +91,7 @@
             <div class="col-md-3 mb-md-0 mb-3">
 
                 <!-- Links -->
-                <h5 class="text-uppercase" style="color: #e65437">Equipe</h5>
+                <h5 class="text-uppercase" style="color: #ffffff"><b>Equipe</b></h5>
 
                 <ul class="list-unstyled texto">
                   <li>
@@ -115,7 +119,7 @@
               <div class="col-md-3 mb-md-0 mb-3">
 
                 <!-- Links -->
-                <h5 class="text-uppercase" style="color: #e65437">Contatos</h5>
+                <h5 class="text-uppercase" style="color: #ffffff"><b>Contatos</b></h5>
 
                 <ul class="list-unstyled texto">
                   <li>
@@ -146,8 +150,8 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer_copyright footer-copyright text-center py-3">© 2018 Copyright:
-          <a href="https://www.eneldistribuicao.com.br/">Enel</a>
+        <div class="footer_copyright footer-copyright text-center py-3 texto">© 2018 Copyright:
+          <a href="https://www.eneldistribuicao.com.br/" style="color: #ffffff">Enel</a>
         </div>
         <!-- Copyright -->
 

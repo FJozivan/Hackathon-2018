@@ -2,33 +2,6 @@
 
 @section('content')
 
-@if (session('status'))
-    <div class="alert alert-success">
-        {{ session('status') }}
-    </div>
-@endif
-
-<div id="carouselSite" class="carousel slide" data-ride="carousel">
-         {{-- <ol class="carousel-indicators">
-            <li data-target="carouselSite" data-slide-to="0" class="active"></li>
-          </ol>
-          --}}
-
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{{ asset('images/slide.png') }}" class="w-100 d-block">
-                <div class="carousel-caption d-none d-md-block">
-                      <h1>Denuncie Já</h1>
-                      <p class="lead">Ajuda-nós a acabar com as irregularidades</p>
-                </div>
-              </div>
-              
-          </div>
-              
-
-        </div> <!--fim da carousel -->
-
-
 <div class="container">
 	<div class="row mt-4">
 		<div class="col-sm-4">
@@ -62,5 +35,38 @@
 			</div>
 		</div>
 	</div>
+	<div class="row mt-4">
+		<div class="col-sm-4">
+			<div class="card border-primary mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Missão 04</div>
+			  <div class="card-body text-primary">
+			    <h5 class="card-title">Ocupações irregulares</h5>
+			    <p class="card-text">O que são ocupações irregulares e quais as principais normas em relação a isso.</p>
+			  </div>
+			  <div class="card-footer border-primary"><button type="button" class="btn btn-primary">Iniciar Missão</button></div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="card border-primary mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Missão 05</div>
+			  <div class="card-body text-primary">
+			    <h5 class="card-title">Ocupações à revelia</h5>
+			    <p class="card-text">O que as empresas precisam fazer para realizar suas instalações legalmente.</p>
+			  </div>
+			  <div class="card-footer border-primary"><button type="button" class="btn btn-primary">Iniciar Missão</button></div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="card border-primary mb-3" style="max-width: 18rem;">
+			  <div class="card-header">Missão 06</div>
+			  <div class="card-body text-primary">
+			    <h5 class="card-title">Ocupação Clandestina</h5>
+			    <p class="card-text">O que são as instalações clandestinas, como ocorrem e como identifica-las facilmente.</p>
+			  </div>
+			  <div class="card-footer border-primary"><button type="button" class="btn btn-primary">Iniciar Missão</button></div>
+			</div>
+		</div>
+	</div>
 </div>
+
 @endsection
