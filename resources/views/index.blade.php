@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style-app.css') }}" rel="stylesheet">
+    <style>
+      .cards{
+        box-shadow: 0px 0px 8px 1px gray;
+      }
+    </style>
 
     <title>System</title>
   </head>
-  <body>    
+  <body style="font-family: 'Open Sans', sans-serif;">    
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1d9aff;">
           <div class="container">
             <a class="navbar-brand h1 mb-0" href="#">System</a>
@@ -67,86 +72,9 @@
          @yield('content') 
           
         
-        <footer class="foot page-footer font-small blue pt-4">
+        <footer class="foot page-footer font-small pt-4">
 
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-
-          <!-- Grid row -->
-          <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3 text-justify texto">
-
-              <!-- Content -->
-              <h5 class="text-uppercase" style="color: #ffffff"><b>Descrição:</b></h5>
-              <p>Aplicativo que facilita a integração entre enel e cliente, a fim de haver uma cooperação simultânea, o app consiste em um canal onde o usuário pode se informar a respeito das normas que a enel dispõe e também poderá fazer denúncias que serão direcionadas a enel, depois de aprender com tutoriais interativos como identificar algumas das irregularidades, apresentando as normas disponibilizadas pela Enel de forma intuitiva.. </p>
-
-            </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none pb-3">
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase" style="color: #ffffff"><b>Equipe</b></h5>
-
-                <ul class="list-unstyled texto">
-                  <li>
-                    <p >Lucas Eduardo</p>
-                  </li>
-                  <li>
-                    <p >Jozivan Freire</p>
-                  </li>
-                  <li>
-                    <p >Raphael Oliveira</p>
-                  </li>
-                  <li>
-                    <p >Deeved Hiuston</p>
-                  </li>
-                  <li>
-                    <p >Alberto Júnior</p>
-                  </li>
-
-                </ul>
-
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase" style="color: #ffffff"><b>Contatos</b></h5>
-
-                <ul class="list-unstyled texto">
-                  <li>
-                    <p>lucasseduhh@gmail</p>
-                  </li>
-                  <li>
-                    <p>josivamfreire.fj@gmail.com</p>
-                  </li>
-                  <li>
-                    <p>raphaeloliveira59@gmail.com</p>
-                  </li>
-                  <li>
-                    <p>deeved@gmail.com</p>
-                  </li>
-                  <li>
-                    <p>alberto@gmail.com</p>
-                  </li>
-
-                </ul>
-
-              </div>
-              <!-- Grid column -->
-
-          </div>
-          <!-- Grid row -->
-
-        </div>
+        <br><br>
         <!-- Footer Links -->
 
         <!-- Copyright -->

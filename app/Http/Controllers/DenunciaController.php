@@ -34,6 +34,9 @@ class DenunciaController extends Controller
         return view('pontos');
     }
 
+    public function sobre(){
+        return view('sobre');
+    }
 
 
     public function create(Request $request)
