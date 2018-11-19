@@ -27,7 +27,8 @@ class DenunciaController extends Controller
     }
 
     public function listagem(){
-        return view('listagemDenuncia');
+        $denuncia = denuncias::all();
+        return view('listagemDenuncia',compact('denuncia'));
     }
 
     public function pontos(){
@@ -65,6 +66,8 @@ class DenunciaController extends Controller
             
        return redirect('/')->with('status','Denuncia Cadastrada com Sucesso');
     }
+
+    
 
     
     public function store(Request $request)

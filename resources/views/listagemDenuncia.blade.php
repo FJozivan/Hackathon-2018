@@ -54,37 +54,23 @@
               <table class="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">Região</th>
+                  <th scope="col">Rua</th>
+                  <th scope="col">Bairro</th>
                   <th scope="col">Cidade</th>
-                  <th scope="col">Estado</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Quantidade de denuncias</th>
+                  <th scope="col">Problema apresentado</th>
+                  <th scope="col">Detalhamento do problema</th>
                 </tr>
               </thead>
               <tbody>
+              @foreach($denuncia as $denuncias)
                 <tr>
-                  <th scope="row">Cariri</th>
-                  <td>Crato</td>
-                  <td>Ceará</td>
-                  <td>Resolvido</td>
-                  <td>20</td>
+                  <th scope="row">{{$denuncias->rua}}</th>
+                  <td>{{$denuncias->bairro}}</td>
+                  <td>{{$denuncias->cidade}}</td>
+                  <td>{{$denuncias->descricao}}</td>
+                  <td>{{$denuncias->observacao}}</td>
                 </tr>
-                <tr>
-                  <th scope="row">Cariri</th>
-                  <td>Crato</td>
-                  <td>Ceará</td>
-                  <td>Resolvido</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <th scope="row">Cariri</th>
-                  <td>Crato</td>
-                  <td>Ceará</td>
-                  <td>Resolvido</td>
-                  <td>20</td>
-                </tr>
-                
-                
+              @endforeach  
               </tbody>
             </table>
               

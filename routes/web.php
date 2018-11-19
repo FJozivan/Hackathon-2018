@@ -9,6 +9,7 @@ $this->get('/listar', 'DenunciaController@listagem')->name('listagemDenuncia');
 $this->get('/bonus', 'DenunciaController@pontos')->name('pontos');
 $this->get('/sobre', 'DenunciaController@sobre')->name('sobre');
 Route::post('/denuncias/criar', 'DenunciaController@create')->name('create');
+Route::get('/apresentar/denuncias','DenunciaController@mostrar')->name('mostrarDenuncia');
 
 
 Auth::routes();
